@@ -1,5 +1,5 @@
 locals {
-  env = local.env
+  env =  terraform.workspace
   project = "whatismyip"
 
 }
