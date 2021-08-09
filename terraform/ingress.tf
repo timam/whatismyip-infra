@@ -1,9 +1,9 @@
-//module "alb-ingress-controller" {
-//  source       = "../tf-modules/alb-ingress-controller"
-//  region       = "ap-southeast-1"
-//  cluster_name = "sit-ortrta-eks-cluster"
-//  vpc_id       = "vpc-84fa6ce3"
-//}
+module "alb-ingress-controller" {
+  source       = "../tf-modules/alb-ingress-controller"
+  region       = "ap-southeast-1"
+  cluster_name = "sit-ortrta-eks-cluster"
+  vpc_id       = "vpc-84fa6ce3"
+}
 
 //module "private-alb-ingress" {
 //  source    = "../tf-modules/private-alb-ingress"
