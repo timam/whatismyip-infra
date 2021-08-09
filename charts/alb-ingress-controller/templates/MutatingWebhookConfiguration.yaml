@@ -5,6 +5,7 @@ apiVersion: admissionregistration.k8s.io/v1beta1
 kind: MutatingWebhookConfiguration
 metadata:
   name: aws-load-balancer-webhook
+  namespace: kube-system
   labels:
     app.kubernetes.io/instance: aws-load-balancer-controller
     app.kubernetes.io/managed-by: Helm
@@ -64,6 +65,7 @@ apiVersion: admissionregistration.k8s.io/v1beta1
 kind: ValidatingWebhookConfiguration
 metadata:
   name: aws-load-balancer-webhook
+  namespace: kube-system
   labels:
     app.kubernetes.io/instance: aws-load-balancer-controller
     app.kubernetes.io/managed-by: Helm
