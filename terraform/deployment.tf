@@ -19,7 +19,7 @@ module "app" {
   microservice_name = "${local.env}-${local.project}-app"
   health_check_path = "/"
   docker_image      = "timam/${local.project}-app"
-  docker_image_tag  = "v1"
+  docker_image_tag  = "v2"
   container_port    = "8080"
   service_port      = "8080"
 }
